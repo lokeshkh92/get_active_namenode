@@ -38,6 +38,7 @@ def get_active_namenode(clusterName):
     else:
         print("We got an active namenode, njoy the time for now!!!")
 
+#Provide the hdfs nameservice for running this script as argument
 clusterName = (sys.argv[1] if len(sys.argv) > 1 else None)
 if not clusterName:
     raise Exception("Specify cluster name.")
